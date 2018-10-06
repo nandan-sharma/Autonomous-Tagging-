@@ -24,9 +24,10 @@ print(CreationDateList)
 
 #finding the week number
 Week= datetime.date(2014,4,17).isocalendar()[1]
+Week= datetime.date(2012,6,12).isocalendar()[1]
+
 
 #counting the number of most frequent word in Title Data
-
 Titlelist=QuestionData.Title.tolist()
 
 print(Titlelist)
@@ -151,4 +152,5 @@ def WordProcessing(Body_word):
     ProcessedBodyWord= WordProcessing(ProcessedSampleBodyData)
 
     count=Counter( ProcessedBodyWord)
+    
 
